@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Jisho Lookup",
+  "version": "1.0",
+  "description": "Look up selected Japanese text on Jisho.org",
+  "permissions": ["contextMenus", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "lookup-selection": {
+      "suggested_key": {
+        "default": "Alt+L"
+      },
+      "description": "Look up selected text on Jisho"
+    }
+  },
+  "icons": {
+    "16": "icon.jpg",
+    "48": "icon.jpg",
+    "128": "icon.jpg"
+  }
+}
